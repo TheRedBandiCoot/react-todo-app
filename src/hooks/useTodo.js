@@ -20,7 +20,7 @@ const useTodo = () => {
       complete: false,
       value,
     };
-    setAddTodos([...addTodos, addNewTodo]);
+    setAddTodos([addNewTodo, ...addTodos]);
     setValue('');
   };
 
